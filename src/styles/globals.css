@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+body {
+    /* background-color: #f5f8ff; */
+    color: #000000;
+    box-sizing: border-box;
+    font-family: "Noto Sans", serif;
+    height: 100%;
+    position: relative;
+}
+p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #262626;
+}
+h1 {
+    font-size: 80px;
+    line-height: 90px;
+    color: #262626;
+    font-weight: 700;
+}
+h2 {
+    font-size: 50px;
+    line-height: normal;
+    font-weight: 700;
+    color: #262626;
+}
+h3 {
+    font-size: 30px;
+    line-height: normal;
+}
+h4 {
+    font-size: 20px;
+    line-height: 38px;
+}
+a {
+    font-size: 20px;
+    line-height: 30px;
+    color: #262626;
+}
+.btn-style {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    height: 78px;
+    width: 350px;
+    border: 1px solid #262626;
+    border-radius: 500px;
+    color: #fff;
+    background: #262626;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-transform: capitalize;
+}
+@media screen and (max-width: 1199px) {
+    .btn-style {
+        padding: 11px 22px;
+        height: unset;
+    }
+    h1 {
+        font-size: 48px;
+        line-height: 54px;
+    }
+    h2 {
+        font-size: 32px;
+        line-height: normal;
+    }
+    h3 {
+        font-size: 24px;
+        line-height: normal;
+    }
+    body::before {
+       display: none;
+    }
+    .leaf-left::before {
+       display: none;
+        
+    }
+    .leaf-right::before {
+        display: none;
+      
+    }
+}
+@media screen and (max-width: 767px) {
+    .btn-style {
+        font-size: 18px;
+        height: 60px;
+    }
+    h1 {
+        font-size: 36px;
+        line-height: 46px;
+    }
+    h2 {
+        font-size: 36px;
+        line-height: normal;
+    }
+    h3 {
+        font-size: 24px;
+        line-height: normal;
+    }
+}
+/* .btn-style:hover{
+    background: transparent;
+    border: 1px solid;
+    color: #000;
+} */
+.btn-style.full {
+    width: 100%;
+}
+.btn-style.transparent {
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+.btn-style.orange {
+    background: #f9b800;
+    border: 1px solid #f9b800;
+    color: #000;
+}
+.btn-style.white {
+    background: #fff;
+    border: 1px solid #fff;
+    color: #000;
+}
+.btn-style.img {
+    img {
+        margin-left: 60px;
+    }
+}
+.hero-bg::before {
+    content: url(../../public/images/icons/hero-bg-img.png);
+    background-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+.feature-bg::before {
+    content: url(../../public/images/feature-bg.png);
+    background-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+.hero-banner-bg::before {
+    content: url(../../public/images/hero-banner-bg.png);
+    background-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+.faq-bg::before {
+    content: url(../../public/images/faq-bg.png);
+    background-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+
+body::before {
+    content: url(../../public/images/leafe-left.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+}
+.leaf-left::before {
+    content: url(../../public/images/leafe-left.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.leaf-right::before {
+    content: url(../../public/images/leafe-right.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 150px;
+    z-index: -1;
+}
+
